@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Hunter</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="px-[150px] bg-[#0D6EFD0D] h-[806px] mb-[350px]">
+        <nav class="flex justify-between items-center py-12">
+            <h3 class="text-2xl font-bold text-[#403F3F]">Hot Gadgets</h3>
+            <button class="btn bg-[#0D6EFD] text-white">Sign Up</button>
+        </nav>
+        <!-- hero section -->
+        <div class="text-center">
+            <h1 class="text-6xl text-[#100F0F] font-bold mb-6">Apple Iphone 13 Pro Max</h1>
+            <p class="w-3/4 text-[#706F6F] mx-auto mb-5">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humou.</p>
+            <button class="btn bg-[#0D6EFD] text-white mb-16">Buy Now</button>
+            <div class="flex items-end justify-center">
+                <img src="Image/pngwing 2.png" alt="">
+                <img src="Image/pngwing 1.png" alt="">
+                <img src="Image/pngwing 3.png" alt="">
+            </div>
+        </div>
+    </header>
+    <main class="px-[150px]">
+        <!-- input field -->
+        <div class="text-center mb-12">
+            <h2 class="text-4xl font-semibold mb-7">Search your Phone</h2>
+            <div class="w-[752px] mx-auto flex items-center"> 
+                <input id="search-field" class="w-full bg-[#100F0F0D] p-4 outline-none rounded-s-xl" type="text" placeholder="Search your phone">
+                <button onclick="searchHandle()" class="px-7 bg-[#0D6EFD] text-white py-4 font-semibold rounded-e-xl">Search</button>
+            </div>
+        </div>
+        <!-- cart -->
+        <section>
+            <!-- spinner -->
+            <div id="loading-spinner" class=" text-center h-[70vh] flex justify-center items-center hidden">
+                <span class="loading loading-spinner loading-lg"></span>
+            </div>
+            <div id="card-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+                <!-- <div class="p-6 rounded-lg bg-white text-center flex flex-col items-center">
+                    <img class="w-full mb-6" src="" alt="">
+                    <h3 class="text-2xl font-bold mb-5">Iphone 13 Pro Max</h3>
+                    <p class="text-lg mb-2">There are many variations of passages of available, but the majority have suffered</p>
+                    <span class="text-2xl font-bold mb-3">$999</span>
+                    <button class="py-2 px-5 bg-[#0D6EFD] rounded-lg text-white font-semibold text-xl">Show Details</button>
+                </div> -->
+            </div>
+            <div id="show-all-container" class="flex justify-center hidden">
+                <button class="py-4 px-9 bg-[#0D6EFD] text-xl font-bold text-white rounded-lg">Show All</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+
+
+
+
+
+
+
+
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>
